@@ -12,8 +12,8 @@ public class InvalidLogin extends BaseTest
 	@Test(priority = 2)
 	public void testInvalidLogin()
 	{
-		String un = Utility.getExcelData(EXCEL_PATH, "InvalidLogin",1, 0);
-		String pw = Utility.getExcelData(EXCEL_PATH, "InvalidLogin",1, 1);
+		String un = Utility.getExcelData(EXCEL_PATH, "InvalidLogin",2, 0);
+		String pw = Utility.getExcelData(EXCEL_PATH, "InvalidLogin",2, 1);
 //		1. enter invalid user name
 		LoginPage loginPage=new LoginPage(driver);
 		loginPage.setUserName(un);
